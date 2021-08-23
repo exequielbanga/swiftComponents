@@ -78,15 +78,19 @@ struct SocialAccountsView: View {
             ForEach(self.socialAccounts, id: \.self){ account in
 
                 HStack{
-                    account.image()
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(maxHeight:25)
-                        .padding()
-                    Link(account.url(), destination: URL(string: account.fullUrl())!)
+                    HStack{
+                        Spacer()
+                        account.image()
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(maxHeight:25,alignment:.center)
+                            .padding()
+                        Spacer()
+                    }.frame(maxWidth:50)
+                    .padding(.trailing, 5)
+                        Link(account.url(), destination: URL(string: account.fullUrl())!)
                         .foregroundColor(self.fontColor)
-                        .frame(maxWidth:.infinity,alignment: .leading)
-                        .padding(.leading)
+                            .frame(maxWidth:.infinity,alignment: .leading)
 
                 }
             }.background(self.backgroundColor)
@@ -96,6 +100,6 @@ struct SocialAccountsView: View {
 
 struct SocialAccountsView_Previews: PreviewProvider {
     static var previews: some View {
-        SocialAccountsView(backgroundColor: .black, fontColor: .white, socialAccounts: [.instagram("/InstaUR"),.facebook("/FacebookURL")])
+        SocialAccountsView(backgroundColor: .black, fontColor: .white, socialAccounts: [.instagram("/instaUser"),.facebook("/fbUser"),.youtube("/youtubeChannel")])
     }
 }
