@@ -12,6 +12,8 @@
 		F6E1225226D3C95A00174CF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6E1225126D3C95A00174CF9 /* Assets.xcassets */; };
 		F6E1225526D3C95A00174CF9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6E1225426D3C95A00174CF9 /* Preview Assets.xcassets */; };
 		F6E1225D26D3C98F00174CF9 /* SocialAccountsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E1225C26D3C98F00174CF9 /* SocialAccountsView.swift */; };
+		F6E1226126D3E42600174CF9 /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E1226026D3E42600174CF9 /* TabsView.swift */; };
+		F6E1226326D4006E00174CF9 /* SegmentedControlBottomLined.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E1226226D4006E00174CF9 /* SegmentedControlBottomLined.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		F6E1225426D3C95A00174CF9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F6E1225626D3C95A00174CF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6E1225C26D3C98F00174CF9 /* SocialAccountsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialAccountsView.swift; sourceTree = "<group>"; };
+		F6E1226026D3E42600174CF9 /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
+		F6E1226226D4006E00174CF9 /* SegmentedControlBottomLined.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlBottomLined.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +58,10 @@
 		F6E1224C26D3C95600174CF9 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				F6E1225F26D3E41100174CF9 /* TabsView */,
+				F6E1225E26D3E3FF00174CF9 /* SocualAccountsView */,
 				F6E1224D26D3C95600174CF9 /* ComponentsApp.swift */,
 				F6E1224F26D3C95600174CF9 /* ContentView.swift */,
-				F6E1225C26D3C98F00174CF9 /* SocialAccountsView.swift */,
 				F6E1225126D3C95A00174CF9 /* Assets.xcassets */,
 				F6E1225626D3C95A00174CF9 /* Info.plist */,
 				F6E1225326D3C95A00174CF9 /* Preview Content */,
@@ -70,6 +75,23 @@
 				F6E1225426D3C95A00174CF9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F6E1225E26D3E3FF00174CF9 /* SocualAccountsView */ = {
+			isa = PBXGroup;
+			children = (
+				F6E1225C26D3C98F00174CF9 /* SocialAccountsView.swift */,
+			);
+			path = SocualAccountsView;
+			sourceTree = "<group>";
+		};
+		F6E1225F26D3E41100174CF9 /* TabsView */ = {
+			isa = PBXGroup;
+			children = (
+				F6E1226026D3E42600174CF9 /* TabsView.swift */,
+				F6E1226226D4006E00174CF9 /* SegmentedControlBottomLined.swift */,
+			);
+			path = TabsView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +165,8 @@
 			files = (
 				F6E1225026D3C95600174CF9 /* ContentView.swift in Sources */,
 				F6E1224E26D3C95600174CF9 /* ComponentsApp.swift in Sources */,
+				F6E1226326D4006E00174CF9 /* SegmentedControlBottomLined.swift in Sources */,
+				F6E1226126D3E42600174CF9 /* TabsView.swift in Sources */,
 				F6E1225D26D3C98F00174CF9 /* SocialAccountsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
