@@ -25,19 +25,20 @@ struct TabsView: View {
     let selectedFontColor: Color
 
     @State var tabs: [Tab]
-    @State var selection: Int = 0
+    @Binding var selection: Int
     
     var body: some View {
-        VStack{
+        VStack(spacing:0){
             SegmentedControlBottomLined(items: self.tabs.map({$0.name}), selection: self.$selection, backgroundColor:self.backgroundColor,textColor:self.fontColor, selectedTextColor:self.selectedFontColor, activeSegmentColor:self.selectedFontColor, textFont: .system(size: 12))
+            self.tabs[self.selection].view
         }
     }
 }
 
 struct TabsView_Previews: PreviewProvider {
     static var previews: some View {
-        TabsView(backgroundColor: .black, fontColor: .gray, selectedFontColor: .white, tabs: [Tab(name: "Information", view: AnyView(Color.green)),
-                        Tab(name: "Wall", view: AnyView(Color.green)),
-                        Tab(name: "Endorsements", view: AnyView(Color.green))])
+        TabsView(backgroundColor: .black, fontColor: .gray, selectedFontColor: .white, tabs: [Tab(name: "Information", view: AnyView(Text("One"))),
+                        Tab(name: "Wall", view: AnyView(Text("Two"))),
+                        Tab(name: "Endorsements", view: AnyView(Text("Three")))], selection:.constant(2))
     }
 }
