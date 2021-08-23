@@ -24,7 +24,7 @@ enum SocialAccountType: Hashable {
             case .twitter(let url):
                 return String("http://www.twitter.com\(url)")
             case .tictoc(let url):
-                return String("http://www.tictoc.com\(url)")
+                return String("http://www.tiktok.com\(url)")
             case .snapchat(let url):
                 return String("http://www.snapchat.com\(url)")
             case .youtube(let url):
@@ -57,7 +57,7 @@ enum SocialAccountType: Hashable {
             case .twitter:
                 return Image("twitter")
             case .tictoc:
-                return Image("tictoc")
+                return Image("tiktok")
             case .snapchat:
                 return Image("snapchat")
             case .youtube:
@@ -100,6 +100,6 @@ struct SocialAccountsView: View {
 
 struct SocialAccountsView_Previews: PreviewProvider {
     static var previews: some View {
-        SocialAccountsView(backgroundColor: .black, fontColor: .white, socialAccounts: [.instagram("/instaUser"),.facebook("/fbUser"),.youtube("/youtubeChannel")])
+        SocialAccountsView(backgroundColor: .black, fontColor: .white, socialAccounts: [.tictoc("/tiktokURL"),.facebook("/facebookURL"),.twitter("/twitterURL")])
     }
 }
